@@ -20,6 +20,8 @@
   "homepage": "https://github.com/FranP-code/open-react-blog-api#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "firebase-admin": "^10.2.0",
+    "nodemon": "^2.0.16",
     "path": "^0.12.7"
   }
 }
