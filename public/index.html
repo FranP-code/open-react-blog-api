@@ -5,12 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORB - (Open React Blog) API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/global.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/styles/default.min.css">
 </head>
 <body>
-    <h1>ORB - (Open React Blog) API</h1>
-    <h3>Available endpoints</h3>
-    <ul>
-        <li>/user - Get determinated user data</li>
-    </ul>
+    <header>
+        <h1>ORB - (Open React Blog) API</h1>
+    </header>
+    <main>
+        <h3>Available endpoints</h3>
+        <ul>
+            <li>
+                <code class="endpoint">/user</code> - Get determinated user data
+                <p>Details:</p>
+                <ul>
+                    <li><strong>GET Request</strong></li>
+                    <li>
+                        <p>Request's Body:</p>
+                        <pre><code>
+{
+    "user": "example" //!REQUIRED <!-- WTF highlight.js -->
+}
+                        </code></pre>
+                    </li>
+                    <li>
+                        <p>Returned data:</p>
+                        <pre><code>
+{
+    "username": {
+        "username": "john-doe",
+        "displayUsername": "John Doe"
+    },
+    "posts": [
+        {
+            "id": "id",
+            "data": {
+                "readingTime": "1 min.",
+                "title": "Lorem Ipsum",
+            },
+            "date": {
+                "seconds": 1651334551
+            },
+            "post": "Full post",
+            "shortPost": "Full p..."
+        }
+    ]
+}
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
