@@ -48,3 +48,6 @@ Base URL: [https://open-react-blog-api.herokuapp.com](https://open-react-blog-ap
 
 **Libraries**
 - [highlight.js](https://highlightjs.org/)
+
+### Additional
+Has been an SDK Keys Leak. Solved.
