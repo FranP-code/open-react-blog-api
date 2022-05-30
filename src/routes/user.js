@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const admin = require("firebase-admin");
-const firebaseSDK = require("../firebase/firebase.json");
+const firebaseSDK = require("../firebase/firebase.js");
 const {getFirestore} = require("firebase-admin/firestore")
 
 admin.initializeApp({
