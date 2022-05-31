@@ -9,6 +9,10 @@ const port = process.env.PORT || 3000
 //Accept with JSON files
 server.use(express.json())
 
+//Solve CORS problem
+const cors = require("cors")
+server.use(cors())
+
 //Serve public for CSS files
 const path = require("path");
 server.use(express.static(path.resolve('public')));
