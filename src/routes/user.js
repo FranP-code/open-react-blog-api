@@ -49,19 +49,21 @@ router.post("/", async (req, res) => {
     userData.posts = []
 
     try {
-
         const postsReference = await db.collection('users').doc(userData.id).collection("posts").get()
         
         postsReference.forEach(doc => {
             userData.posts.push({
                 id: doc.id,
-                data: doc.data()
+                ...doc.data()
             })
         })
     } catch (error) {
         console.log(err)
         res.status(400).json(err)
     }
+
+    //Order posts by last modificated time
+    userData.posts.sort((a, b) => b.date.seconds-a.date.seconds)
 
     //Hide user id
     userData.id = null

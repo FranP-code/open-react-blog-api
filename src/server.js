@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require("express");
 const server = express()
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 //Accept with JSON files
 server.use(express.json())
