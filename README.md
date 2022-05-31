@@ -26,10 +26,8 @@ Base URL: [https://open-react-blog-api.herokuapp.com](https://open-react-blog-ap
             "posts": [
                 {
                     "id": "id",
-                    "data": {
-                        "readingTime": "1 min.",
-                        "title": "Lorem Ipsum",
-                    },
+                    "readingTime": "1 min.",
+                    "title": "Lorem Ipsum",
                     "date": {
                         "seconds": 1651334551
                     },
