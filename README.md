@@ -9,7 +9,7 @@ Base URL: [https://open-react-blog-api.herokuapp.com](https://open-react-blog-ap
 - `/user` - Get determinated user data
     
     Details:
-    - **GET Request**
+    - **POST Request**
     - Request's Body:
         ```json
         {
