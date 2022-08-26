@@ -2,7 +2,7 @@
 
 Little API for access to Open React Blog's data.
 
-Base URL: [https://open-react-blog-api.herokuapp.com](https://open-react-blog-api.herokuapp.com)
+Base URL: [https://open-react-blog-api.up.railway.app](https://open-react-blog-api.up.railway.app)
 
 ## Available endpoints
 
