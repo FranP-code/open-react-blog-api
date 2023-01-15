@@ -10,8 +10,13 @@ const port = process.env.PORT || 3001
 server.use(express.json())
 
 //Solve CORS problem
-const cors = require("cors")
-server.use(cors())
+app.use(function(req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+});
 
 //Serve public for CSS files
 const path = require("path");
